@@ -33,14 +33,14 @@
             flex-direction: column;
             gap: 0.9rem;
             width: 35%;
-        }
+        }   
         button{
             background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% );
             color: rgb(7, 20, 2);
             padding: 0.4rem;
             font-size: 1.2rem;
             border-radius: 10px;
-            font-weight: bolder;
+            font-weight: bold;
         }
         button:hover{
             background-image: radial-gradient( circle farthest-corner at 10.2% 55.8%,  rgb(245, 69, 122) 0%, rgba(250,38,151,1) 46.2%, rgb(214, 49, 208) 90.1% );
@@ -49,6 +49,15 @@
         .in{
             background-color: aliceblue;
             border-radius: 5px;
+        }
+        @media (max-width: 700px) {
+            form{
+                width: 70%;
+            }
+            button{
+                font-size: 1rem;
+                padding: 0.3rem;
+            }
         }
         
     </style>

@@ -14,9 +14,7 @@
             height: 100%;
             color: white;     
             background-image:
-            linear-gradient(45deg,
-              rgba(245,70,66, 0.75),
-              rgba(8,83,156, 0.75)), url('aboutimg.jpg');
+            url('aboutimg.jpg');
               background-attachment: fixed;
         }
         .about{
@@ -27,17 +25,30 @@
             flex-direction: column;
             align-items: center;
             gap: 1.6rem;
-            background-color: #5c0152a8;
+            background-color: #b85600c9;
+            text-align: center;
             
         }
         h2{
             font-size: 2.1rem;
-            color: black;
-            text-shadow: 1px 1px 2px #bebdbd;
+            color: black;        
+            text-shadow: 1px 1px 2px #cdb703;
         }
         p{
-            font-size: 1.4rem;
-            text-align: center;
+            font-size: 1.4rem;    
+            text-shadow: 1px 1px 2px black;
+        }
+
+        @media (max-width: 500px) {
+            .about{
+                width: 90%;
+            }
+            h2{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -62,7 +73,7 @@
     
             <h2>Start Your Literary Journey Today</h2>
     
-            <p>Whether you're a lifelong bookworm or just beginning your reading journey, [Your Bookstore Name] is here to fuel your love for literature. Explore our bookstore, discover new worlds, and embark on countless adventures through the power of words</p>
+            <p>Whether you're a lifelong bookworm or just beginning your reading journey, Sash BookStore is here to fuel your love for literature. Explore our bookstore, discover new worlds, and embark on countless adventures through the power of words</p>
         </div>
     </div>
     
