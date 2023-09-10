@@ -48,63 +48,7 @@
 ul{
     list-style: none;
 }
-#catalog{
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-#catalog h2{
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 2px aliceblue;
-    color: black;
-    padding-top: 1.5rem;
-}
-#img{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem 0rem;
-    justify-content: center;
-    align-items: center;
-}
-#img img{
-    width: 200px;
-    height: 285px;
-    margin: 0.5rem;
-    box-shadow: 0px 0px 4px black;
-}
-@media (max-width: 1200px) {
-    #img img{
-        width: 170px;
-        height: 250px;
-    }   
-}
-@media (max-width: 650px) {
-    #img img{
-        width: 100px;
-        height: 160px;
-    }   
-}
-@media (max-width: 450px) {
-    #img img{
-        width: 70px;
-        height: 120px;
-    }  
-    #catalog h2{
-        font-size: 1.7rem;
-    } 
-}
-@media (max-width: 370px) {
-    #img{
-        width: 95%;
-    }
-    #img img{
-        width: 50px;
-        height: 84px;
-    }   
-}
+
 .welcome{
     font-size: 1.7rem;
     text-shadow: 1px 1px 2px #da1e90;
@@ -279,4 +223,65 @@ ul{
     display: inline-block;
     padding: 0.3rem;
     margin: 0.3rem;
+}
+
+#bestsell{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#bestsell h2{
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px aliceblue;
+    color: black;
+    padding: 1.5rem;
+}
+.imgsell{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.imgs{
+    position: relative;
+    width: 14%;
+    margin: 1.5rem 0;
+}
+
+.imgs img{
+    width: 100%;
+    height: 180px;
+    filter: blur(1px);
+    border: 0.5px solid black;
+    box-shadow: 0 5 3px black;
+}
+.imgwrite{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    background-color: rgb(204, 175, 248);
+    padding:0.1rem 0.2rem;
+}
+.above{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 60%;
+    text-align: center;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient( 83.2deg, rgb(157, 110, 228) 10.8%, rgb(110, 101, 234) 94.3% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: default;
+}
+.above h4{
+    font-weight: bold;
 }
